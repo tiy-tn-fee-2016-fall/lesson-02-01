@@ -8,3 +8,22 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'reset';
 
 @import 'components/options';
+
+.sticky-footer {
+  position: relative;
+  bottom: 0;
+
+  background: #333;
+  color: $c-white;
+
+  overflow: auto;
+}
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+  background: green;
+}
