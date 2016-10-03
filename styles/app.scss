@@ -15,15 +15,19 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
   background: #333;
   color: $c-white;
-
-  overflow: auto;
 }
 
 .full-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
-  height: 100vh;
+  min-height: 100vh;
   background: green;
+
+  &__content {
+    flex-grow: 1;
+    padding: 1rem;
+
+    background: $c-white;
+  }
 }
