@@ -1,0 +1,15 @@
+.options {
+  padding: 0.5rem 1rem;
+
+  background: darken($c-primary, 10%);
+  color: $c-white;
+
+  &__flex {
+    display: flex;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
