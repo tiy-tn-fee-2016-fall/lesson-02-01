@@ -10,9 +10,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'components/options';
 
 .sticky-footer {
-  position: relative;
-  bottom: 0;
-
   background: #333;
   color: $c-white;
 }
