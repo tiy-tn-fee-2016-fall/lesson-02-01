@@ -4,6 +4,10 @@
   background: darken($c-primary, 10%);
   color: $c-white;
 
+  &__mobile-toggle {
+    display: none;
+  }
+
   &__flex {
     display: flex;
   }
@@ -11,5 +15,44 @@
   a {
     color: inherit;
     text-decoration: none;
+
+    &:hover {
+      background: rgba(#eee, 0.2);
+    }
+  }
+}
+
+// These styles only apply when below 540px
+@media (max-width: 540px) {
+  .options {
+    position: relative;
+
+    &__mobile-toggle {
+      display: block;
+      text-align: right;
+    }
+
+    &__tab-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__tab-item {
+      padding: 0.5rem;
+      border-top: #444 solid 1px;
+    }
+
+    &__flex {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #333;
+
+      &--toggle {
+        display: block;
+      }
+    }
   }
 }
