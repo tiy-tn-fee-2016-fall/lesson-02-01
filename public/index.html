@@ -74,5 +74,16 @@
       <h1>I should stay on the bottom of the page...</h1>
     </footer>
   </div>
+
+  <script type="text/javascript">
+    var toggle = document.querySelector('.options__mobile-toggle');
+    var nav = document.querySelector('.options__flex');
+
+    function showNav(){
+      nav.classList.toggle('options__flex--toggle');
+    }
+
+    toggle.addEventListener('click', showNav);
+  </script>
 </body>
 </html>
